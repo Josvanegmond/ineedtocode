@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DungeonMasterActivity!</string>
+    <string name="app_name">DungeonMaster</string>
+    <string name="addweektasktime">12:00am</string>
+    <string name="addweektaskdate">1/1/2011</string>
+    <string name="addweektaskname">Task name</string>
+    <string name="addtaskdeadline">Deadline:</string>
+    <string name="goalname">Goal Name</string>
+
+</resources>

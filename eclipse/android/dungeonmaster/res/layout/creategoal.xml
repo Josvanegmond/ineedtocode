@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:alignmentMode="alignBounds"
+    android:columnCount="2"
+    android:orientation="vertical"
+    android:rowCount="3" >
+
+    <EditText
+        android:id="@+id/goalNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/goalname" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_column="1"
+        android:layout_gravity="left"
+        android:layout_row="0" />
+
+    <ListView
+        android:id="@+id/taskListView"
+        android:layout_width="215dp"
+        android:layout_height="300dp"
+        android:layout_column="0"
+        android:layout_row="1"
+        tools:listitem="@android:layout/simple_list_item_single_choice" >
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/addTaskButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Add Task" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Task" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="Delete Task" />
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:text="Delete All" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="2"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/createGoalCancelButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/createGoalOkButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok" />
+
+    </LinearLayout>
+
+</GridLayout>
